@@ -2,7 +2,8 @@
     -header-bg-color: #373d48;
     -header-fg-color: #ffffff;
     -inspector-bg-color: #373d48;
-    -inspector-btn-bg-color: #26a970;
+    -inspector-btn-bg-color: #335599;
+    -inspector-btn-bg-color-hover: #7799cc;
     -inspector-btn-fg-color: #ffffff;
     -inspector-fg-color: #ffffff;
     -inspector-fg-ro-color: #ffffff;
@@ -17,8 +18,21 @@
     -fx-background-color: -view-bg-color;
 }
 
-.mainComboBox{
+.mainComboBox .arrow{
+    -fx-background-color: -inspector-btn-fg-color;
+}
+
+.mainComboBox .arrow-button{
     -fx-background-color: -inspector-btn-bg-color;
+}
+
+.mainComboBox .list-cell{
+    -fx-text-fill: -inspector-btn-fg-color;
+    -fx-background-color: -inspector-btn-bg-color;
+}
+
+.mainComboBox .list-cell:hover{
+    -fx-background-color: -inspector-btn-bg-color-hover;
 }
 
 .mainHeader{
