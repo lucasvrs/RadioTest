@@ -1,0 +1,32 @@
+{
+  "radios": [
+    {
+      "name": "Philips RL4250",
+      "imageName": "philips-rl4250.png",
+      "frequency": {
+        "min": 88.0,
+        "max": 108.0,
+        "value": 89.6
+      },
+      "volume": {
+        "min": 0.0,
+        "max": 100.0,
+        "value": 0.0
+      }
+    },
+    {
+      "name": "Emerson RP6251",
+      "imageName": "emerson-rp6251.png",
+      "frequency": {
+        "min": 88.0,
+        "max": 108.0,
+        "value": 89.6
+      },
+      "volume": {
+        "min": 0.0,
+        "max": 25.0,
+        "value": 0.0
+      }
+    }
+  ]
+}

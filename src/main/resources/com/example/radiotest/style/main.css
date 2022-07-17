@@ -1,0 +1,68 @@
+*{
+    -header-bg-color: #373d48;
+    -header-fg-color: #ffffff;
+    -inspector-bg-color: #373d48;
+    -inspector-btn-bg-color: #26a970;
+    -inspector-btn-fg-color: #ffffff;
+    -inspector-fg-color: #ffffff;
+    -inspector-fg-ro-color: #ffffff;
+    -inspector-separator-color: #ffffff;
+    -log-bg-color: #6f7889;
+    -log-border-color: #333333;
+    -log-thumb-color: #777777;
+    -view-bg-color: #4d5667;
+}
+
+.main{
+    -fx-background-color: -view-bg-color;
+}
+
+.mainComboBox{
+    -fx-background-color: -inspector-btn-bg-color;
+}
+
+.mainHeader{
+    -fx-background-color: -header-bg-color;
+}
+
+.mainInspector{
+    -fx-background-color: -inspector-bg-color;
+    -fx-padding: 10px;
+}
+
+.mainInspectorLabel{
+    -fx-text-fill: -inspector-fg-color;
+}
+
+.mainInspectorSpinner .increment-arrow-button,
+.mainInspectorSpinner .decrement-arrow-button{
+    -fx-body-color: -inspector-btn-bg-color;
+}
+
+.mainLog .scroll-bar:vertical{
+    -fx-background-color: -log-border-color;
+}
+
+.mainLog .scroll-bar:vertical .thumb{
+    -fx-background-color: -log-thumb-color;
+}
+
+.mainLogPane{
+    -fx-background-color: -log-bg-color;
+}
+
+.mainLogContent{
+    -fx-background-color: -log-bg-color;
+}
+
+.mainMenu{
+    -fx-background-color: -inspector-bg-color;
+}
+
+.mainMenu > .container > .menu-button > .label{
+    -fx-text-fill: -header-fg-color;
+}
+
+.mainSeparator{
+    -fx-background-color: -inspector-separator-color;
+}

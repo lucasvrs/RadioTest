@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.Spinner?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleButton?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<GridPane fx:id="main" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="800.0" styleClass="main" stylesheets="@style/main.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.radiotest.MainController">
+  <columnConstraints>
+    <ColumnConstraints />
+    <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+      <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0" prefWidth="300.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="NEVER" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Pane id="radio-view" fx:id="radioViewFx" prefHeight="186.0" prefWidth="300.0" styleClass="mainView" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.rowIndex="2" GridPane.rowSpan="3" />
+      <ScrollPane id="radio-log" fitToHeight="true" fitToWidth="true" prefHeight="100.0" prefWidth="538.0" styleClass="mainLog" GridPane.columnIndex="4" GridPane.columnSpan="2" GridPane.hgrow="NEVER" GridPane.rowIndex="5">
+         <content>
+            <VBox fx:id="mainLogPane" prefHeight="400.0" prefWidth="100.0" styleClass="mainLogPane" />
+         </content>
+      </ScrollPane>
+      <VBox fx:id="radioInspector" maxWidth="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="300.0" styleClass="mainInspector" GridPane.columnIndex="6" GridPane.rowIndex="2" GridPane.rowSpan="4">
+         <children>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainInspectorLabel" text="Inspector" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Label styleClass="mainInspectorLabel" text="ID" />
+                  <Label styleClass="mainInspectorLabel" text="Name" GridPane.rowIndex="1" />
+                  <TextField fx:id="radioIdField" editable="false" GridPane.columnIndex="1" />
+                  <TextField fx:id="radioNameField" editable="false" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Separator prefWidth="200.0" styleClass="mainSeparator" GridPane.columnSpan="2" GridPane.rowIndex="2" />
+               </children>
+            </GridPane>
+            <Label alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" styleClass="mainInspectorLabel" text="Controls" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <GridPane fx:id="inspectorControls">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="-Infinity" minHeight="10.0" prefHeight="200.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <Slider fx:id="radioFreqSlider" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minHeight="-Infinity" orientation="VERTICAL" prefHeight="200.0" GridPane.rowIndex="1" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="mainInspectorLabel" text="Frequency" />
+                  <Spinner fx:id="radioFreqSpinner" editable="true" styleClass="mainInspectorSpinner" GridPane.rowIndex="2" />
+                  <Slider fx:id="radioVolSlider" maxWidth="1.7976931348623157E308" orientation="VERTICAL" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+                  <Spinner fx:id="radioVolSpinner" editable="true" styleClass="mainInspectorSpinner" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <Label alignment="CENTER" maxWidth="1.7976931348623157E308" styleClass="mainInspectorLabel" text="Volume" GridPane.columnIndex="1" />
+               </children>
+            </GridPane>
+            <ToggleButton maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#toggleRadioPower" text="On/Off">
+               <VBox.margin>
+                  <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+            </ToggleButton>
+         </children>
+      </VBox>
+      <MenuBar maxHeight="1.7976931348623157E308" styleClass="mainMenu" GridPane.columnIndex="4" GridPane.columnSpan="3">
+        <menus>
+          <Menu mnemonicParsing="false" styleClass="mainMenuItem" text="File">
+            <items>
+                  <MenuItem mnemonicParsing="false" text="Preferences">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="COMMA" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+              <MenuItem mnemonicParsing="false" onAction="#onQuit" text="Quit">
+                     <accelerator>
+                        <KeyCodeCombination alt="UP" code="Q" control="ANY" meta="UP" shift="UP" shortcut="UP" />
+                     </accelerator>
+                  </MenuItem>
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <HBox alignment="CENTER_LEFT" prefHeight="100.0" prefWidth="200.0" styleClass="mainHeader" GridPane.columnIndex="4" GridPane.columnSpan="3" GridPane.rowIndex="1">
+         <children>
+            <ComboBox fx:id="radioComboBox" maxWidth="1.7976931348623157E308" onAction="#onComboIndexChange" prefWidth="300.0" styleClass="mainComboBox" />
+         </children>
+      </HBox>
+   </children>
+</GridPane>
