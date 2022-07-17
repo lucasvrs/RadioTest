@@ -14,6 +14,10 @@ import java.io.InputStream;
 import java.util.Objects;
 
 public class RadioJsonReader {
+    /**
+     * Reads a json file containing all the radios for this application and transforms the raw data into radio objects.
+     * @return a list with all radios mentioned in the json file.
+     */
     public static ObservableList<Radio> read() {
         JSONObject obj;
         try{

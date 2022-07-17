@@ -12,6 +12,9 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
+/**
+ * A logger holding its data in an arraylist and writing its output into a text file (to be included).
+ */
 public class TxtLogger implements ILogger{
     private List<LoggingPair> log = new ArrayList<>();
     private String fileName;

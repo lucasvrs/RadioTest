@@ -1,5 +1,8 @@
 package com.example.radiotest;
 
+/**
+ * Container for logging data.
+ */
 public class LoggingPair {
     public LoggingType type;
     public String entry;

@@ -2,6 +2,9 @@ package com.example.radiotest;
 
 import java.util.List;
 
+/**
+ * Interface for building a logger.
+ */
 public interface ILogger {
     public List<LoggingPair> getEntries();
     public List<String> getErrors();

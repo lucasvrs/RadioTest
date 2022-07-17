@@ -6,6 +6,9 @@ import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Model class for Radios.
+ */
 public class Radio implements ISubject {
     /*Member Variables*/
     private boolean powerIsOn       =   false;
@@ -21,6 +24,7 @@ public class Radio implements ISubject {
     private String  name            =   "Radio";
 
     /*Private Methods*/
+
     private void orderMinMaxFreq(){
         if(minVolume > maxVolume){
             float tmp = minVolume;
