@@ -24,7 +24,7 @@ This project is still under development. Following tasks are still incomplete:
 
 # Radio Sim
 
-This project is a simple radio simulation.
+The target for this project was to develop a simple radio simulation.
 
 ## Challenges
 
@@ -47,7 +47,8 @@ In order to create the gui faster, the application scenebuilder was used. It is 
 
 ![img.png](images/json.png)
 
-The simulation should be able to display different types of radios. Therefore, a json file was used as simple "database" to provide an easy to read interface between computer and user. Moreover, it is extandable.
+The simulation should be able to display different types of radios. Therefore, a json file was used as simple "database" to provide an easy to read interface between computer and user. Moreover, it is easy extandable.
 
 ![img.png](images/app.png)
 
+As shown above, the ui is kept simple because of the small dimension of the overall task. While the MainView shows the selected radio, the user can change the volume and the frequency through the inspector. In the bottom left hand corner one can see the log for the current run.
