@@ -52,3 +52,7 @@ The simulation should be able to display different types of radios. Therefore, a
 ![img.png](images/app.png)
 
 As shown above, the ui is kept simple because of the small dimension of the overall task. While the MainView shows the selected radio, the user can change the volume and the frequency through the inspector. In the bottom left hand corner one can see the log for the current run.
+
+## Future Development
+
+In the future, modules could be added in order to make the MainView more lively. Those modules could make the radio pictures interactive, thus, making the simulation more realistic.
