@@ -21,6 +21,8 @@ This project is still under development. Following tasks are still incomplete:
 - [ ] check for code coverage
 - [ ] clean up the code
 
+**Total development time: 14h**
+
 ---
 
 # Radio Sim
