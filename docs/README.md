@@ -19,6 +19,7 @@ This project is still under development. Following tasks are still incomplete:
 - [ ] write tests
 - [ ] check for code safety
 - [ ] check for code coverage
+- [ ] clean up the code
 
 ---
 
